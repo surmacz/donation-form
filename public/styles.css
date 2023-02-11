@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@500&family=Work+Sans:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: none;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0;
+  color: #423C66;
+  background-color: #FFDBCB;
+  border-radius: 2px;
+  gap: 16px;
+}
+.title-section svg {
+  fill: #423C66;
+}
+
+.title-section .title {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.title-section .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+main {
+  position: relative;
+  background: #FFFFFF;
+}
+
+
+main input{
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding: .3em .3em .3em 1.1em;
+  border: 1px solid #E9EEF2;
+  border-radius: 4px;
+  width: -webkit-fill-available;
+}
+
+
+main .amount-input-container .currency {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  /* font-weight: 500; */
+  font-size: 18px;
+  position: absolute;
+  padding: 10px;
+}
+main .amount-input-container .currency::before {
+  content: "$";
+}
+
+main label {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.month-control {
+  border: 1px solid #E9EEF2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.month-control .change-month {
+  background-color: white;
+  padding: .4em;
+  border: 0;
+}
+
+.month-control .change-month:hover {
+  background-color: #E9EEF2;
+}
+
+.month-control .previous::before {
+  content: "<";
+}
+
+.month-control .next::before {
+  content: ">";
+}
+
+.summary-section {
+  border: 1px solid #E9EEF2;
+  border-radius: 4px;
+  margin: 0 1.5em 1.5em 1.5em;
+  color: #1E2A32;
+}
+
+.summary-section .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em 0 1em;
+}
+
+.summary-section .total .label{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.summary-section .total .amount {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.summary-section .notice {
+  background-color: #F4F8FA;
+  margin-top: 2em;
+  border-radius: 5px;
+
+  padding: 2em 1em;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.actions-section {
+  margin: 1.5em;
+}
+
+.actions-section .cancel {
+  display: none;
+}
+
+.actions-section .cancel-mini {
+  position: absolute;
+  top: .3em;
+  right: .3em;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  background: #FFDBCB;
+  color: #595D7B;
+  border: 0;
+}
+
+.actions-section .continue {
+  width: 100%;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  background: #423C66;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 0.9em 4em;
+}
+
+.donation-details-section {
+  margin: 1.5em;
+  color: #4D6475;
+}
+
+.donation-details-section .month-container {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+
+
+  margin-top: 1em;
+  padding: 0;
+  border: 0;
+}
+
+.donation-form {
+  background-color: #F4F8FA;
+  min-width: 230px;
+}
+
+@media all and (min-width: 360px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
+    border-radius: 5px;
+  }
+
+  header {
+    display: block;
+    height: 80px;
+  }
+
+  .donation-details-section {
+    display: flex;
+  }
+
+  .donation-details-section .amount-container {
+    width: 50%;
+  }
+
+  .donation-details-section .month-container {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .actions-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .actions-section .cancel {
+    display: block;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: #595D7B;
+    padding: 0.9em 4em;
+  }
+
+  .actions-section .cancel:hover {
+    background: rgba(178, 167, 244, 0.1);
+  }
+
+  .actions-section .cancel:active {
+    background: rgba(178, 167, 244, 0.25);
+  }
+
+  .actions-section .cancel-mini {
+    display: none;
+  }
+
+  .actions-section .continue {
+    width: auto;
+  }
+
+  .donation-form {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main input {
+    width: auto;
+  }
+
+  .summary-section {
+    border: 0;
+  }
+
+  .summary-section .total {
+    padding: 0 1em;
+  }
+
+  .summary-section .total .label {
+    font-size: 20px;
+  }
+
+  .summary-section .total .amount {
+    font-size: 32px;
+  }
+
+  .title-section {
+    flex-direction: row;
+    padding: 2em;
+  }
+}
