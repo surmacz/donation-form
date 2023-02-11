@@ -1,0 +1,55 @@
+.summary-section {
+  border: 1px solid #E9EEF2;
+  border-radius: 4px;
+  margin: 0 1.5em 1.5em 1.5em;
+  color: #1E2A32;
+}
+
+.summary-section .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em 0 1em;
+}
+
+.summary-section .total .label {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.summary-section .total .amount {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.summary-section .notice {
+  background-color: #F4F8FA;
+  margin-top: 2em;
+  border-radius: 5px;
+
+  padding: 2em 1em;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@media all and (min-width: 360px) {
+  .summary-section {
+    border: 0;
+  }
+
+  .summary-section .total {
+    padding: 0 1em;
+  }
+
+  .summary-section .total .label {
+    font-size: 20px;
+  }
+
+  .summary-section .total .amount {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,39 @@
+.amount-container input {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding: .3em .3em .3em 1.1em;
+  border: 1px solid #E9EEF2;
+  border-radius: 4px;
+  width: -webkit-fill-available;
+}
+
+.amount-container label {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.amount-container .amount-input-container .currency {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  position: absolute;
+  padding: 10px;
+}
+.amount-container .amount-input-container .currency::before {
+  content: "$";
+}
+
+@media all and (min-width: 360px) {
+  .amount-container {
+    width: 50%;
+  }
+  .amount-container input {
+    width: auto;
+  }
+}

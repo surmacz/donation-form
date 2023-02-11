@@ -1,0 +1,43 @@
+.month-container .month-control {
+  border: 1px solid #E9EEF2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.month-container .month-control .change-month {
+  background-color: white;
+  padding: .4em;
+  border: 0;
+}
+
+.month-container .month-control .change-month:hover {
+  background-color: #E9EEF2;
+}
+
+.month-container .month-control .previous::before {
+  content: "<";
+}
+
+.month-container .month-control .next::before {
+  content: ">";
+}
+
+.month-container {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 1em;
+  padding: 0;
+  border: 0;
+}
+
+@media all and (min-width: 360px) {
+
+  .month-container {
+    width: 50%;
+    margin-top: 0;
+  }
+}

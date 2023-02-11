@@ -1,0 +1,38 @@
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0;
+  color: #423C66;
+  background-color: #FFDBCB;
+  border-radius: 2px;
+  gap: 16px;
+}
+.title-section svg {
+  fill: #423C66;
+}
+
+.title-section .title {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.title-section .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media all and (min-width: 360px) {
+  .title-section {
+    flex-direction: row;
+    padding: 2em;
+  }
+}
