@@ -1,0 +1,10 @@
+header {
+  display: none;
+}
+
+@media all and (min-width: 360px) {
+  header {
+    display: block;
+    height: 80px;
+  }
+}

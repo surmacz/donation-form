@@ -1,14 +1,11 @@
 import React from 'react';
+import { Header } from './header.tsx';
 
-interface Props {
-  foo: string
-}
+interface Props {}
 
-export const App: React.FC<Props> = ({foo}) => {
+export const App: React.FC<Props> = () => {
   return <>
-      <header>
-          logo
-      </header>
+      <Header />
       <div className="donation-form">
         <main>
           <div className="title-section">
