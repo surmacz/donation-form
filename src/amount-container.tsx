@@ -5,7 +5,7 @@ interface Props {}
 
 export const AmountContainer: React.FC<Props> = () => {
   return <div className="amount-container">
-    <label for="amount-input">
+    <label htmlFor="amount-input">
       I can donate
     </label>
     <div className="amount-input-container">
