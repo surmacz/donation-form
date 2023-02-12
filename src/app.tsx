@@ -10,12 +10,8 @@ import './app.css';
 interface Props {}
 
 export const App: React.FC<Props> = () => {
-  const getDefaultDate = () => {
-    const now = new Date();
-    return increaseDate(now);
-  }
-
-  const [date, setDate] = useState<Date>(getDefaultDate());
+  const [amount, setAmount] = useState<number|undefined>(0);
+  const [date, setDate] = useState<Date>(increaseDate(new Date()));
 
   return <>
       <Header />
@@ -23,10 +19,10 @@ export const App: React.FC<Props> = () => {
         <main>
           <TitleSection />
           <div className="donation-details-section">
-            <AmountContainer />
+            <AmountContainer setAmount={setAmount} />
             <MonthContainer date={date} setDate={setDate} />
           </div>
-          <SummarySection date={date} />
+          <SummarySection amount={amount} date={date} />
           <ActionsSection />
         </main>
       </div>
