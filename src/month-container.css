@@ -1,29 +1,3 @@
-.month-container .month-control {
-  border: 1px solid #E9EEF2;
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.month-container .month-control .change-month {
-  background-color: white;
-  padding: .4em;
-  border: 0;
-}
-
-.month-container .month-control .change-month:hover {
-  background-color: #E9EEF2;
-}
-
-.month-container .month-control .previous::before {
-  content: "<";
-}
-
-.month-container .month-control .next::before {
-  content: ">";
-}
-
 .month-container {
   font-family: 'Work Sans';
   font-style: normal;
@@ -34,10 +8,55 @@
   border: 0;
 }
 
-@media all and (min-width: 360px) {
+.month-container .month-control {
+  height: 3.15em;
+  margin-top: 0.4em;
+  border: 1px solid #E9EEF2;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.month-container .month-control > div:first-of-type {
+  margin-left: .3em;
+}
+
+.month-container .month-control > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.month-container .month-control > div:last-of-type {
+  margin-right: .3em;
+}
+
+.month-container .month-control .change-month {
+  background-color: white;
+  padding: .4em;
+  border: 0;
+}
+
+.month-container .month-control .change-month:hover {
+  background-color: #F3F5FE;
+}
+
+.month-container .month-control .change-month:active {
+  background-color: #E8EAF2;
+}
+
+.month-container .month-control .previous::before {
+  content: "<";
+}
+
+.month-container .month-control .next::before {
+  content: ">";
+}
+
+@media all and (min-width: 360px) {
   .month-container {
-    width: 50%;
+    width: 48%;
     margin-top: 0;
   }
 }

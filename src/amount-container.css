@@ -10,12 +10,20 @@
   width: -webkit-fill-available;
 }
 
+.amount-container input:active {
+  border: 1px solid #423C66;
+}
+
 .amount-container label {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+}
+
+.amount-container .amount-input-container {
+  margin-top: .2em;
 }
 
 .amount-container .amount-input-container .currency {
@@ -31,9 +39,6 @@
 
 @media all and (min-width: 360px) {
   .amount-container {
-    width: 50%;
-  }
-  .amount-container input {
-    width: auto;
+    width: 48%;
   }
 }

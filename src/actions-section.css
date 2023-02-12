@@ -14,9 +14,14 @@
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  background: #FFDBCB;
+  background-color: #FFDBCB;
   color: #595D7B;
   border: 0;
+}
+
+.actions-section .cancel-mini:active {
+  background-color: #F2D0C1;
+  border-radius: 10px;
 }
 
 .actions-section .continue {
@@ -25,10 +30,18 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  background: #423C66;
+  background-color: #423C66;
   border-radius: 5px;
   color: #FFFFFF;
   padding: .9em 4em;
+}
+
+.actions-section .continue:hover {
+  background-color: #645D93;
+}
+
+.actions-section .continue:active {
+  background-color: #241E47;
 }
 
 @media all and (min-width: 360px) {
@@ -44,18 +57,18 @@
     font-weight: 600;
     font-size: 16px;
 
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 5px;
     color: #595D7B;
     padding: .9em 4em;
   }
 
   .actions-section .cancel:hover {
-    background: rgba(178, 167, 244, 0.1);
+    background-color: rgba(178, 167, 244, 0.1);
   }
 
   .actions-section .cancel:active {
-    background: rgba(178, 167, 244, 0.25);
+    background-color: rgba(178, 167, 244, 0.25);
   }
 
   .actions-section .cancel-mini {
