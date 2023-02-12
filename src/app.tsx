@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import { ActionsSection } from './actions-section.tsx';
-import { Header } from './header.tsx';
-import { SummarySection } from './summary-section.tsx';
-import { TitleSection } from './title-section.tsx';
-import { AmountContainer } from './amount-container.tsx';
-import { MonthContainer, increaseDate } from './month-container.tsx';
+import { ActionsSection } from './actions-section';
+import { Header } from './header';
+import { SummarySection } from './summary-section';
+import { TitleSection } from './title-section';
+import { AmountContainer } from './amount-container';
+import { MonthContainer, increaseDate } from './month-container';
 import './app.css';
 
 interface Props {}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { months } from './month-container.tsx';
+import { months } from './month-container';
 import './summary-section.css';
 
 interface Props {
@@ -13,7 +13,11 @@ export const SummarySection: React.FC<Props> = ({amount, date}) => {
     return (date.getFullYear() - now.getFullYear() - 1) * 12 + date.getMonth() + 12 - now.getMonth();
   }
 
-  return <div className="summary-section" hidden={amount === 0 || amount === undefined}>
+  if (amount === 0 || amount === undefined) {
+    return null;
+  }
+
+  return <div className="summary-section">
     <div className="total">
       <div className="label">Total amount</div>
       <div className="amount">${new Intl.NumberFormat('en-US').format(getMonthsDiff() * amount)}</div>

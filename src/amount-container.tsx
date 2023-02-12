@@ -3,7 +3,7 @@ import { NumericFormat } from 'react-number-format';
 import './amount-container.css';
 
 interface Props {
-  setAmount: (amount: number) => void
+  setAmount: (amount: number | undefined) => void
 }
 
 export const AmountContainer: React.FC<Props> = ({setAmount}) => {
