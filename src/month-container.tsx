@@ -36,12 +36,12 @@ export const MonthContainer: React.FC<Props> = ({date, setDate}) => {
       <div>
         <button disabled={ifCannotChangePrevious()} onClick={decDate} className="change-month previous" />
       </div>
-      <div>
+      <div data-testid="month-control-caption">
         <div className="month"><strong>{months[date.getMonth()]}</strong></div>
         <div className="year">{date.getFullYear()}</div>
       </div>
       <div>
-        <button onClick={incDate} className="change-month next" />
+        <button onClick={incDate} className="change-month next" data-testid="month-control-increase-date-button" />
       </div>
     </div>
   </fieldset>

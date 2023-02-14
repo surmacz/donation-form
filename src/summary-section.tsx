@@ -20,9 +20,9 @@ export const SummarySection: React.FC<Props> = ({amount, date}) => {
   return <div className="summary-section">
     <div className="total">
       <div className="label">Total amount</div>
-      <div className="amount">${new Intl.NumberFormat('en-US').format(getMonthsDiff() * amount)}</div>
+      <div className="amount" data-testid="summary-total-amount">${new Intl.NumberFormat('en-US').format(getMonthsDiff() * amount)}</div>
     </div>
-    <div className="notice">
+    <div className="notice" data-testid="summary-notice">
       You’re will be sending <strong>${new Intl.NumberFormat('en-US').format(amount)}</strong>{' '}
       every month, until <strong>{months[date.getMonth()]} {date.getFullYear()}</strong>. Thank you!
     </div>
