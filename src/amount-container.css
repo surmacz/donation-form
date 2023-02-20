@@ -31,7 +31,7 @@
   font-style: normal;
   font-size: 18px;
   position: absolute;
-  padding: 10px;
+  padding: 11px 10px;
 }
 .amount-container .amount-input-container .currency::before {
   content: "$";
