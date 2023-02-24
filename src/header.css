@@ -2,7 +2,7 @@ header {
   display: none;
 }
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 361px) {
   header {
     display: block;
     height: 80px;

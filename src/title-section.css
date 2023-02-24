@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 361px) {
   .title-section {
     flex-direction: row;
     padding: 2em;

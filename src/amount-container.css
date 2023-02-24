@@ -37,7 +37,7 @@
   content: "$";
 }
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 361px) {
   .amount-container {
     width: 48%;
   }

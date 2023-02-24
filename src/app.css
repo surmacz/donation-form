@@ -14,7 +14,7 @@ main {
   color: #4D6475;
 }
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 361px) {
   main {
     display: flex;
     flex-direction: column;

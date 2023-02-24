@@ -54,7 +54,7 @@
   content: ">";
 }
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 361px) {
   .month-container {
     width: 48%;
     margin-top: 0;

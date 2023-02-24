@@ -36,7 +36,7 @@
   font-size: 12px;
 }
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 361px) {
   .summary-section {
     border: 0;
   }
