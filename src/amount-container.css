@@ -4,7 +4,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  padding: .3em .3em .3em 1.1em;
+  padding: .3em .3em .3em 1.4em;
   border: 1px solid #E9EEF2;
   border-radius: 4px;
   width: -webkit-fill-available;
@@ -22,19 +22,14 @@
   line-height: 18px;
 }
 
-.amount-container .amount-input-container {
+.amount-container input {
   margin-top: .2em;
 }
 
-.amount-container .amount-input-container .currency {
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  position: absolute;
-  padding: 11px 10px;
-}
-.amount-container .amount-input-container .currency::before {
-  content: "$";
+.amount-container svg {
+  position: relative;
+  bottom: 32px;
+  left: 10px;
 }
 
 @media all and (min-width: 361px) {

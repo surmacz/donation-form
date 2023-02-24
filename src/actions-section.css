@@ -17,6 +17,7 @@
   background-color: #FFDBCB;
   color: #595D7B;
   border: 0;
+  padding: 8px 16px;
 }
 
 .actions-section .cancel-mini:active {
