@@ -24,8 +24,18 @@ module.exports = {
         use: ["ts-loader"],
       },
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                localIdentName: "[name]__[local]",
+              },
+            },
+          },
+        ],
       },
     ]
   },
@@ -36,7 +46,7 @@ module.exports = {
     new CopyPlugin({patterns: ["public/styles.css"]}),
   ],
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".jsx"],
+    extensions: [".tsx", ".ts", ".js", ".jsx", ".css"],
   },
   mode: "development",
 };

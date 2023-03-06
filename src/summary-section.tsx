@@ -1,6 +1,6 @@
 import React from 'react';
 import { months } from './month-container';
-import './summary-section.css';
+import styles from './summary-section.module.css';
 
 interface Props {
   amount: number|undefined
@@ -17,12 +17,12 @@ export const SummarySection: React.FC<Props> = ({amount, date}) => {
     return null;
   }
 
-  return <div className="summary-section">
-    <div className="total">
-      <div className="label">Total amount</div>
-      <div className="amount" data-testid="summary-total-amount">${new Intl.NumberFormat('en-US').format(getMonthsDiff() * amount)}</div>
+  return <div className={styles.container}>
+    <div className={styles.total}>
+      <div className={styles.label}>Total amount</div>
+      <div className={styles.amount} data-testid="summary-total-amount">${new Intl.NumberFormat('en-US').format(getMonthsDiff() * amount)}</div>
     </div>
-    <div className="notice" data-testid="summary-notice">
+    <div className={styles.notice} data-testid="summary-notice">
       You’re will be sending <strong>${new Intl.NumberFormat('en-US').format(amount)}</strong>{' '}
       every month, until <strong>{months[date.getMonth()]} {date.getFullYear()}</strong>. Thank you!
     </div>

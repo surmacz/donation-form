@@ -1,5 +1,5 @@
 import React from 'react';
-import './month-container.css';
+import styles from './month-container.module.css';
 
 export const increaseDate = (date: Date) => {
   const newDate = new Date(date.toString());
@@ -24,24 +24,24 @@ export const MonthContainer: React.FC<Props> = ({date, setDate}) => {
     setDate(newDate);
   }
 
-  const ifCannotChangePrevious = () => {
+  const ifCannotChangeDecrease = () => {
     const now = new Date();
     const nextMonth = increaseDate(now);
     return nextMonth.getFullYear() === date.getFullYear() && nextMonth.getMonth() === date.getMonth();
   }
 
-  return <fieldset className="month-container">
+  return <fieldset className={styles.container}>
     <legend>Every month until</legend>
-    <div className="month-control">
+    <div className={styles.controller}>
       <div>
-        <button disabled={ifCannotChangePrevious()} onClick={decDate} className="change-month previous" />
+        <button disabled={ifCannotChangeDecrease()} onClick={decDate} className={styles.decrease} />
       </div>
-      <div data-testid="month-control-caption">
-        <div className="month"><strong>{months[date.getMonth()]}</strong></div>
-        <div className="year">{date.getFullYear()}</div>
+      <div data-testid="month-caption">
+        <div><strong>{months[date.getMonth()]}</strong></div>
+        <div>{date.getFullYear()}</div>
       </div>
       <div>
-        <button onClick={incDate} className="change-month next" data-testid="month-control-increase-date-button" />
+        <button onClick={incDate} className={styles.increase} data-testid="increase-date-button" />
       </div>
     </div>
   </fieldset>

@@ -1,12 +1,12 @@
-.actions-section {
+.container {
   margin: 1.5em;
 }
 
-.actions-section .cancel {
+.cancel {
   display: none;
 }
 
-.actions-section .cancel-mini {
+.cancel-mini {
   position: absolute;
   top: .3em;
   right: .3em;
@@ -20,12 +20,12 @@
   padding: 8px 16px;
 }
 
-.actions-section .cancel-mini:active {
+.cancel-mini:active {
   background-color: #F2D0C1;
   border-radius: 10px;
 }
 
-.actions-section .continue {
+.continue {
   width: 100%;
   font-family: 'Work Sans';
   font-style: normal;
@@ -37,21 +37,21 @@
   padding: .9em 4em;
 }
 
-.actions-section .continue:hover {
+.continue:hover {
   background-color: #645D93;
 }
 
-.actions-section .continue:active {
+.continue:active {
   background-color: #241E47;
 }
 
 @media all and (min-width: 361px) {
-  .actions-section {
+  .container {
     display: flex;
     justify-content: space-between;
   }
 
-  .actions-section .cancel {
+  .cancel {
     display: block;
     font-family: 'Work Sans';
     font-style: normal;
@@ -64,19 +64,19 @@
     padding: .9em 4em;
   }
 
-  .actions-section .cancel:hover {
+  .cancel:hover {
     background-color: rgba(178, 167, 244, 0.1);
   }
 
-  .actions-section .cancel:active {
+  .cancel:active {
     background-color: rgba(178, 167, 244, 0.25);
   }
 
-  .actions-section .cancel-mini {
+  .cancel-mini {
     display: none;
   }
 
-  .actions-section .continue {
+  .continue {
     width: auto;
   }
 }

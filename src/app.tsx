@@ -5,7 +5,7 @@ import { SummarySection } from './summary-section';
 import { TitleSection } from './title-section';
 import { AmountContainer } from './amount-container';
 import { MonthContainer, increaseDate } from './month-container';
-import './app.css';
+import styles from './app.module.css';
 
 interface Props {}
 
@@ -15,10 +15,10 @@ export const App: React.FC<Props> = () => {
 
   return <>
       <Header />
-      <div className="donation-form">
+      <div className={styles.container}>
         <main>
           <TitleSection />
-          <div className="donation-details-section">
+          <div className={styles["donation-details-section"]}>
             <AmountContainer setAmount={setAmount} />
             <MonthContainer date={date} setDate={setDate} />
           </div>

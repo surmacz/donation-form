@@ -1,30 +1,30 @@
-.summary-section {
+.container {
   border: 1px solid #E9EEF2;
   border-radius: 4px;
   margin: 0 1.5em 1.5em 1.5em;
   color: #1E2A32;
 }
 
-.summary-section .total {
+.total {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 1em 0 1em;
 }
 
-.summary-section .total .label {
+.label {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
 }
 
-.summary-section .total .amount {
+.amount {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
 }
 
-.summary-section .notice {
+.notice {
   background-color: #F4F8FA;
   margin-top: 2em;
   border-radius: 5px;
@@ -37,19 +37,19 @@
 }
 
 @media all and (min-width: 361px) {
-  .summary-section {
+  .container {
     border: 0;
   }
 
-  .summary-section .total {
+  .total {
     padding: 0 1em;
   }
 
-  .summary-section .total .label {
+  .label {
     font-size: 20px;
   }
 
-  .summary-section .total .amount {
+  .amount {
     font-size: 32px;
   }
 }

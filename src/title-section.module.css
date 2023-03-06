@@ -1,4 +1,4 @@
-.title-section {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,11 +8,11 @@
   border-radius: 2px;
   gap: 16px;
 }
-.title-section svg {
+.container svg {
   fill: #423C66;
 }
 
-.title-section .title {
+.title {
   font-family: 'Work Sans', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-.title-section .subtitle {
+.subtitle {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -31,7 +31,7 @@
 }
 
 @media all and (min-width: 361px) {
-  .title-section {
+  .container {
     flex-direction: row;
     padding: 2em;
   }

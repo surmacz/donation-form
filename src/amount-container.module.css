@@ -1,4 +1,4 @@
-.amount-container input {
+.container input {
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -10,11 +10,11 @@
   width: -webkit-fill-available;
 }
 
-.amount-container input:active {
+.container input:active {
   border: 1px solid #423C66;
 }
 
-.amount-container label {
+.container label {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
@@ -22,18 +22,18 @@
   line-height: 18px;
 }
 
-.amount-container input {
+.container input {
   margin-top: .2em;
 }
 
-.amount-container svg {
+.container svg {
   position: relative;
   bottom: 32px;
   left: 10px;
 }
 
 @media all and (min-width: 361px) {
-  .amount-container {
+  .container {
     width: 48%;
   }
 }

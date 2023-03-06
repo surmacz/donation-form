@@ -1,4 +1,4 @@
-.month-container {
+.container {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
@@ -8,7 +8,7 @@
   border: 0;
 }
 
-.month-container .month-control {
+.controller {
   height: 3.15em;
   margin-top: 0.4em;
   border: 1px solid #E9EEF2;
@@ -18,44 +18,52 @@
   align-items: center;
 }
 
-.month-container .month-control > div:first-of-type {
+.controller > div:first-of-type {
   margin-left: .3em;
 }
 
-.month-container .month-control > div:nth-of-type(2) {
+.controller > div:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.month-container .month-control > div:last-of-type {
+.controller > div:last-of-type {
   margin-right: .3em;
 }
 
-.month-container .month-control .change-month {
+.change-month {
   background-color: white;
   padding: .4em;
   border: 0;
 }
 
-.month-container .month-control .change-month:hover {
+.change-month:hover {
   background-color: #F3F5FE;
 }
 
-.month-container .month-control .change-month:active {
+.change-month:active {
   background-color: #E8EAF2;
 }
 
-.month-container .month-control .previous::before {
+.decrease {
+  composes: change-month;
+}
+
+.decrease::before {
   content: "<";
 }
 
-.month-container .month-control .next::before {
+.increase {
+  composes: change-month;
+}
+
+.increase::before {
   content: ">";
 }
 
 @media all and (min-width: 361px) {
-  .month-container {
+  .container {
     width: 48%;
     margin-top: 0;
   }

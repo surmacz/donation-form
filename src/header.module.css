@@ -1,19 +1,19 @@
-header {
+:global header {
   display: none;
 }
 
 @media all and (min-width: 361px) {
-  header {
+  :global header {
     display: block;
     height: 80px;
     padding: 1.2em;
   }
 
-  header > svg {
+  :global header > svg {
     margin-right: .5em;
   }
 
-  header svg {
+  :global header svg {
     fill: #423C66;
   }
 }

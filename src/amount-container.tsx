@@ -1,13 +1,13 @@
 import React from 'react';
 import { NumericFormat } from 'react-number-format';
-import './amount-container.css';
+import styles from './amount-container.module.css';
 
 interface Props {
   setAmount: (amount: number | undefined) => void
 }
 
 export const AmountContainer: React.FC<Props> = ({setAmount}) => {
-  return <div className="amount-container">
+  return <div className={styles.container}>
     <label>
       I can donate
       <NumericFormat

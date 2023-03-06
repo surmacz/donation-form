@@ -1,10 +1,10 @@
 
-main {
+:global main {
   position: relative;
   background-color: #FFFFFF;
 }
 
-.donation-form {
+.container {
   background-color: #F4F8FA;
   min-width: 230px;
 }
@@ -15,7 +15,7 @@ main {
 }
 
 @media all and (min-width: 361px) {
-  main {
+  :global main {
     display: flex;
     flex-direction: column;
     width: 600px;
@@ -23,7 +23,7 @@ main {
     border-radius: 5px;
   }
 
-  .donation-form {
+  .container {
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
@@ -34,5 +34,4 @@ main {
     display: flex;
     gap: 4%;
   }
-
 }

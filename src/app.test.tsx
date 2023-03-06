@@ -17,7 +17,7 @@ test('Given I visit the main page', async () => {
   await fireEvent.change(amountInput, {target: {value: '1000'}});
 
   // And when I move months 2 times forward in "Every month until" controller
-  const increaseDateButton = screen.getByTestId('month-control-increase-date-button');
+  const increaseDateButton = screen.getByTestId('increase-date-button');
   await fireEvent.click(increaseDateButton);
   await fireEvent.click(increaseDateButton);
 
@@ -25,9 +25,9 @@ test('Given I visit the main page', async () => {
   expect(amountInput).toHaveValue('1,000');
 
   // And I should see "April 2022" caption in "Every month until" controller
-  const monthControlCaption = screen.getByTestId('month-control-caption');
-  expect(monthControlCaption).toHaveTextContent('April');
-  expect(monthControlCaption).toHaveTextContent('2022');
+  const monthCaption = screen.getByTestId('month-caption');
+  expect(monthCaption).toHaveTextContent('April');
+  expect(monthCaption).toHaveTextContent('2022');
 
   // And I should see "$3,000" in "Total amount" summary caption
   expect(screen.getByTestId('summary-total-amount')).toHaveTextContent('$3,000');
