@@ -1,8 +1,8 @@
 .container {
-  border: 1px solid #E9EEF2;
+  border: 1px solid #e9eef2;
   border-radius: 4px;
   margin: 0 1.5em 1.5em 1.5em;
-  color: #1E2A32;
+  color: #1e2a32;
 }
 
 .total {
@@ -25,7 +25,7 @@
 }
 
 .notice {
-  background-color: #F4F8FA;
+  background-color: #f4f8fa;
   margin-top: 2em;
   border-radius: 5px;
 

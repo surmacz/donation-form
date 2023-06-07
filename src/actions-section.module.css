@@ -9,16 +9,16 @@
 .cancel-mini {
   position: absolute;
   top: 0;
-  right: .4rem;
+  right: 0.4rem;
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   background-color: transparent;
-  color: #595D7B;
+  color: #595d7b;
   border: 0;
   border-radius: 8px;
-  padding: 0 .5rem .08rem .5rem;
+  padding: 0 0.5rem 0.08rem 0.5rem;
 }
 
 .cancel-mini:hover {
@@ -26,7 +26,7 @@
 }
 
 .cancel-mini:active {
-  background-color: #F2D0C1;
+  background-color: #f2d0c1;
 }
 
 @media (color-gamut: p3) {
@@ -45,19 +45,19 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  background-color: #423C66;
+  background-color: #423c66;
   border-radius: 5px;
   border-color: #c5c5c5;
-  color: #FFFFFF;
-  padding: .9em 3em;
+  color: #ffffff;
+  padding: 0.9em 3em;
 }
 
 .continue:hover {
-  background-color: #645D93;
+  background-color: #645d93;
 }
 
 .continue:active {
-  background-color: #241E47;
+  background-color: #241e47;
 }
 
 @media all and (min-width: 361px) {
@@ -74,11 +74,11 @@
     font-weight: 600;
     font-size: 16px;
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 5px;
     border-color: #c5c5c5;
-    color: #595D7B;
-    padding: .9em 3em;
+    color: #595d7b;
+    padding: 0.9em 3em;
   }
 
   .cancel:hover {

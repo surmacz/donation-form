@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   padding: 8px 0;
-  color: #423C66;
-  background-color: #FFDBCB;
+  color: #423c66;
+  background-color: #ffdbcb;
   border-radius: 2px;
   gap: 16px;
 }
 .container svg {
-  fill: #423C66;
+  fill: #423c66;
 }
 
 .title {

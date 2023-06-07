@@ -1,6 +1,6 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -15,38 +15,38 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        use: ["ts-loader"],
+        use: ['ts-loader'],
       },
       {
         test: /\.css$/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: {
-                localIdentName: "[name]__[local]",
+                localIdentName: '[name]__[local]',
               },
             },
           },
         ],
       },
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html',
     }),
-    new CopyPlugin({patterns: ["public/styles.css"]}),
+    new CopyPlugin({ patterns: ['public/styles.css'] }),
   ],
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".jsx", ".css"],
+    extensions: ['.tsx', '.ts', '.js', '.jsx', '.css'],
   },
-  mode: "development",
-};
+  mode: 'development',
+}

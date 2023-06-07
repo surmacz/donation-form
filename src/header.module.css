@@ -10,10 +10,10 @@
   }
 
   :global header > svg {
-    margin-right: .5em;
+    margin-right: 0.5em;
   }
 
   :global header svg {
-    fill: #423C66;
+    fill: #423c66;
   }
 }
