@@ -33,6 +33,12 @@
 @media all and (min-width: 361px) {
   .container {
     flex-direction: row;
-    padding: 2em;
+    padding: 2rem;
+  }
+}
+
+@media (color-gamut: p3) {
+  .container {
+    background-color: color(display-p3 0.983 0.9 0.923);
   }
 }

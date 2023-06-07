@@ -3,14 +3,18 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  margin-top: 1em;
+  margin: 1em 0 0 0;
   padding: 0;
   border: 0;
 }
 
+.container legend {
+  padding: 0;
+}
+
 .controller {
-  height: 3.15em;
-  margin-top: 0.4em;
+  height: 2.8rem;
+  margin-top: 0.2rem;
   border: 1px solid #E9EEF2;
   border-radius: 4px;
   display: flex;
@@ -40,9 +44,14 @@
 
 .change-month:hover {
   background-color: #F3F5FE;
+  border-radius: 2px;
 }
 
-.change-month:active {
+.change-month:focus {
+  outline: color-mix(in srgb, #E9EEF2, gray) auto 1px;
+}
+
+.change-month:active:not(:disabled) {
   background-color: #E8EAF2;
 }
 
@@ -64,7 +73,7 @@
 
 @media all and (min-width: 361px) {
   .container {
-    width: 48%;
+    width: 50%;
     margin-top: 0;
   }
 }

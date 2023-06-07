@@ -1,5 +1,5 @@
 .container {
-  margin: 1.5em;
+  margin: 1.4rem;
 }
 
 .cancel {
@@ -8,21 +8,35 @@
 
 .cancel-mini {
   position: absolute;
-  top: .3em;
-  right: .3em;
+  top: 0;
+  right: .4rem;
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  background-color: #FFDBCB;
+  background-color: transparent;
   color: #595D7B;
   border: 0;
-  padding: 8px 16px;
+  border-radius: 8px;
+  padding: 0 .5rem .08rem .5rem;
+}
+
+.cancel-mini:hover {
+  background-color: #f5ddd2;
 }
 
 .cancel-mini:active {
   background-color: #F2D0C1;
-  border-radius: 10px;
+}
+
+@media (color-gamut: p3) {
+  .cancel-mini:hover {
+    background-color: color(display-p3 0.983 0.86 0.923);
+  }
+
+  .cancel-mini:active {
+    background-color: color(display-p3 0.983 0.84 0.923);
+  }
 }
 
 .continue {
@@ -33,8 +47,9 @@
   font-size: 16px;
   background-color: #423C66;
   border-radius: 5px;
+  border-color: #c5c5c5;
   color: #FFFFFF;
-  padding: .9em 4em;
+  padding: .9em 3em;
 }
 
 .continue:hover {
@@ -49,6 +64,7 @@
   .container {
     display: flex;
     justify-content: space-between;
+    gap: 0.2rem;
   }
 
   .cancel {
@@ -60,8 +76,9 @@
 
     background-color: #FFFFFF;
     border-radius: 5px;
+    border-color: #c5c5c5;
     color: #595D7B;
-    padding: .9em 4em;
+    padding: .9em 3em;
   }
 
   .cancel:hover {

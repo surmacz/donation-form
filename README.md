@@ -1,3 +1,5 @@
+# Only for DEMO purposes
+
 ## To run the project locally
 - `npm ci`
 - `npm run dev`
@@ -8,4 +10,5 @@
 - Chrome 109
 
 ## Run the project using Docker
-`docker run -it --rm -p 3000:3000 --name donation-form0 -v "$PWD":/usr/src/app -w /usr/src/app node:18.14 npm run dev`
+- `npm ci`
+- `docker run -it --rm -p 3000:3000 --name donation-form0 -v "$PWD":/usr/src/app -w /usr/src/app node:18.14 npm run dev`

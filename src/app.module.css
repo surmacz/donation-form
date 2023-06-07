@@ -10,7 +10,7 @@
 }
 
 .donation-details-section {
-  margin: 1.5em;
+  margin: 1.5rem;
   color: #4D6475;
 }
 
@@ -32,6 +32,6 @@
 
   .donation-details-section {
     display: flex;
-    gap: 4%;
+    gap: .2rem;
   }
 }
